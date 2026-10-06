@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "21d7484a-1196-47b5-b4e8-973b364a720d",
+    "name": "PayFlow API Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31620183"
+  },
+  "item": [
+    {
+      "name": "BUG-001 - Validar Valor Zerado (PIX)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"amount\":0.00,\r\n    \"payer_email\": \"cliente@email.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/payments/pix](https://reqres.in/api/payments/pix",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "payments",
+            "pix](https:",
+            "",
+            "reqres.in",
+            "api",
+            "payments",
+            "pix"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CT-01 - Criar Pagamento PIX com sucesso",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"amount\":100.00,\r\n    \"payer_email\": \"cliente@email.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://reqres.in/api/payments/pix](https://reqres.in/api/payments/pix",
+          "protocol": "https",
+          "host": [
+            "reqres",
+            "in"
+          ],
+          "path": [
+            "api",
+            "payments",
+            "pix](https:",
+            "",
+            "reqres.in",
+            "api",
+            "payments",
+            "pix"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
